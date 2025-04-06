@@ -47,6 +47,7 @@ jobs:
           terraform_version: 1.5.0
       
       - name: Terraform Init
+        working-directory: ./terraform
         run: |
           terraform init \
             -backend-config="bucket=${{ secrets.S3_BUCKET_NAME }}" \
@@ -54,9 +55,11 @@ jobs:
             -backend-config="region=${{ env.AWS_REGION }}"
       
       - name: Terraform Apply
+        working-directory: ./terraform
         run: |
           terraform apply -auto-approve
       
       - name: Force ECS Update
+        working-directory: ./terraform
         run: |
           aws ecs update-service --cluster medusa-cluster --service medusa-service --force-new-deployment
