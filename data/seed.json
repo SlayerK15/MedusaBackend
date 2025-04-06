@@ -1,0 +1,28 @@
+{
+    "regions": [
+      {
+        "id": "reg_na",
+        "name": "North America",
+        "currency_code": "usd",
+        "tax_rate": 0,
+        "payment_providers": ["system"],
+        "fulfillment_providers": ["manual"],
+        "countries": ["us", "ca"]
+      }
+    ],
+    "currencies": [
+      {
+        "code": "usd",
+        "symbol": "$",
+        "symbol_native": "$",
+        "name": "US Dollar"
+      },
+      {
+        "code": "eur",
+        "symbol": "€",
+        "symbol_native": "€",
+        "name": "Euro"
+      }
+    ],
+    "shipping_options": []
+  }
