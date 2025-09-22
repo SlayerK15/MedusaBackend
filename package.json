@@ -30,7 +30,7 @@
     "@medusajs/cli": "2.6.1",
     "@medusajs/framework": "2.6.1",
     "@medusajs/medusa": "2.6.1",
-    "@mikro-orm/core": "6.4.3",
+    "@mikro-orm/core": "6.5.5",
     "@mikro-orm/knex": "6.4.3",
     "@mikro-orm/migrations": "6.4.3",
     "@mikro-orm/postgresql": "6.4.3",
